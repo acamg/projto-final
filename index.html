@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Buffet Manager</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<aside class="sidebar"><div class="brand"><div class="brand-icon">✦</div><div><strong>Buffet Manager</strong><small>Gestão de eventos</small></div></div>
+<nav id="navigation" aria-label="Menu principal"></nav>
+<div class="sidebar-footer"><div class="status-dot"></div><span>Banco de dados local</span><button id="backup-btn" type="button" title="Exportar cópia de segurança">Backup</button></div></aside>
+<div class="app-shell"><header class="topbar"><div><span class="eyebrow">SISTEMA DE GESTÃO</span><h1 id="page-title">Visão geral</h1></div><div class="top-actions"><span id="today"></span><button id="primary-action" class="btn primary">+ Novo evento</button></div></header>
+<main id="content" tabindex="-1"></main><footer>Buffet Manager · Projeto Final DAD · Dados armazenados neste computador</footer></div>
+<div id="modal-layer" class="modal-layer hidden" role="presentation"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><header class="modal-header"><div><span class="eyebrow">CADASTRO</span><h2 id="modal-title"></h2></div><button id="close-modal" class="icon-button" aria-label="Fechar">✕</button></header><form id="record-form"><div id="form-fields" class="form-grid"></div><div class="modal-actions"><button type="button" class="btn" id="cancel-modal">Cancelar</button><button type="submit" class="btn primary">Salvar registro</button></div></form></section></div>
+<div id="toast" class="toast hidden" role="status"></div><script src="renderer.js"></script></body></html>
